@@ -1,0 +1,36 @@
+:root {
+  --white: rgb(255, 255, 255);
+
+  --theme-1-bg: rgb(58, 71, 100);
+  --theme-1-tgkp: rgb(35, 44, 67);
+  --theme-1-screen: rgb(24, 32, 52);
+  --theme-1-keybg: rgb(99, 112, 151);
+  --theme-1-keysw: rgb(64, 78, 114);
+  --theme-1-keytg: rgb(208, 63, 47);
+  --theme-1-keytgsw: rgb(147, 38, 26);
+  --theme-1-kb: rgb(234, 227, 220);
+  --theme-1-ks: rgb(180, 165, 151);
+  --theme-1-grayblue: rgb(68, 75, 90);
+
+  --theme-2-bg: rgb(230, 230, 230);
+  --theme-2-tgkp: rgb(209, 204, 204);
+  --theme-2-screen: rgb(237, 237, 237);
+  --theme-2-keybg: rgb(55, 127, 134);
+  --theme-2-keysw: rgb(27, 95, 101);
+  --theme-2-keytg: rgb(202, 85, 2);
+  --theme-2-keytgsw: rgb(137, 57, 1);
+  --theme-2-kb: rgb(229, 228, 225);
+  --theme-2-ks: rgb(166, 157, 145);
+  --theme-2-grayellow: rgb(53, 53, 44);
+
+  --theme-3-bg: rgb(22, 6, 40);
+  --theme-3-tgkpsbg: rgb(29, 9, 52);
+  --theme-3-keybg: rgb(88, 7, 125);
+  --theme-3-keysw: rgb(188, 21, 244);
+  --theme-3-keytg: rgb(0, 224, 209);
+  --theme-3-keytgsw: rgb(108, 249, 242);
+  --theme-3-kb: rgb(52, 28, 79);
+  --theme-3-ks: rgb(135, 28, 156);
+  --theme-3-lightyellow: rgb(255, 229, 61);
+  --theme-3-darkblue: rgb(27, 36, 40);
+}

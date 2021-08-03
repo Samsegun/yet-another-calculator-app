@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+  <script src="js/vendor.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content-wrapper">
+      <!-- heading -->
+      <div class="header">
+        <div class="header-items">
+          <h2>calc</h2>
+          <div class="switch">
+            <h3>THEME</h3>
+
+            <div class="switch-toggle">
+              <div class="switch-nums">
+                <span class="switch-num">1</span>
+                <span class="switch-num">2</span>
+                <span class="switch-num">3</span>
+              </div>
+              <div class="slide">
+                <span class="slider dark-gray"></span>
+
+                <!-- this boxes represent different color schemes and styles for the page -->
+                <span class="check-1_box box"></span>
+                <span class="check-2_box box"></span>
+                <span class="check-3_box box"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- input display -->
+      <div class="screen">
+        <input type="text">
+      </div>
+      <!-- number keys -->
+      <div class="keys-wrapper">
+        <div class="keys">
+          <button type="button" data-num="7">7</button>
+          <button type="button" data-num="8">8</button>
+          <button type="button" data-num="9">9</button>
+          <button type="button" id="del">DEL</button>
+          <button type="button" data-num="4">4</button>
+          <button type="button" data-num="5">5</button>
+          <button type="button" data-num="6">6</button>
+          <button type="button" data-operator="+">+</button>
+          <button type="button" data-num="1">1</button>
+          <button type="button" data-num="2">2</button>
+          <button type="button" data-num="3">3</button>
+          <button type="button" data-operator="-">-</button>
+          <button type="button" data-num=".">.</button>
+          <button type="button" data-num="0">0</button>
+          <button type="button" data-operator="/">/</button>
+          <button type="button" data-operator="*">x</button>
+          <button type="button" id="reset">RESET</button>
+          <button type="button" id="equals">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
