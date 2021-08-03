@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
   <script src="js/vendor.js" defer></script>
-  <script src="js/app.js" defer></script>
+  <script src="js/toggle.js" defer></script>
 </head>
 
 <body>
@@ -24,9 +24,9 @@
 
             <div class="switch-toggle">
               <div class="switch-nums">
-                <span class="switch-num">1</span>
-                <span class="switch-num">2</span>
-                <span class="switch-num">3</span>
+                <span class="switch-num box check-1_box box">1</span>
+                <span class="switch-num box check-2_box box">2</span>
+                <span class="switch-num box check-3_box box">3</span>
               </div>
               <div class="slide">
                 <span class="slider dark-gray"></span>
@@ -50,7 +50,7 @@
           <button type="button" data-num="7">7</button>
           <button type="button" data-num="8">8</button>
           <button type="button" data-num="9">9</button>
-          <button type="button" id="del">DEL</button>
+          <button type="button" id="del" class="ctrl">DEL</button>
           <button type="button" data-num="4">4</button>
           <button type="button" data-num="5">5</button>
           <button type="button" data-num="6">6</button>
@@ -63,8 +63,8 @@
           <button type="button" data-num="0">0</button>
           <button type="button" data-operator="/">/</button>
           <button type="button" data-operator="*">x</button>
-          <button type="button" id="reset">RESET</button>
-          <button type="button" id="equals">=</button>
+          <button type="button" id="reset" class="ctrl">RESET</button>
+          <button type="button" id="equals" class="ctrl">=</button>
         </div>
       </div>
     </div>

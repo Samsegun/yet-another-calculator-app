@@ -10,6 +10,7 @@
   background: var(--theme-1-bg);
   font-family: Spartan, Arial;
   position: relative;
+  transition: background 300ms ease;
 }
 
 .content-wrapper {
@@ -76,12 +77,26 @@
   transform: translateX(0) rotateZ(-45deg);
 }
 
+.light {
+  border-radius: 50%;
+  background-color: var(--theme-2-keytg);
+  box-shadow: 1px 1px 2px var(--theme-2-keytgsw);
+  transform: translateX(1.6rem);
+}
+
+.magenta {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: var(--theme-3-keytg);
+  box-shadow: 1px 1px 2px var(--theme-3-keytgsw);
+  transform: translateX(3.3rem) rotateZ(45deg);
+}
+
 .box {
   height: 1rem;
   width: 1.4rem;
   display: inline-block;
   cursor: pointer;
-  border-right: 1px solid;
   position: relative;
   z-index: 1;
 }
@@ -96,7 +111,7 @@
   font-family: Spartan, Arial;
   border-radius: 0.8rem;
   background: var(--theme-1-screen);
-  color: var(--white);
+  color: inherit;
 }
 
 .keys-wrapper {
