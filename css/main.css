@@ -15,14 +15,21 @@
 .content-wrapper {
   width: 50%;
   margin: 0 auto;
-  padding-top: 5rem;
+  padding-top: 3rem;
   text-align: center;
+  display: grid;
+  gap: 1rem;
+  color: var(--white);
 }
 
 .header-items {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.switch {
+  font-size: 0.8rem;
 }
 
 .switch h3,
@@ -49,7 +56,7 @@
   border: 1px solid;
   position: relative;
   border-radius: 0.7rem;
-  background: silver;
+  background: var(--theme-1-tgkp);
 }
 
 .slider {
@@ -58,8 +65,15 @@
   bottom: 4px;
   width: 0.9rem;
   height: 0.8rem;
-  background-color: red;
+  background-color: var(--theme-1-keytg);
+  box-shadow: 2px 2px 3px var(--theme-1-keytgsw);
   transition: all 300ms ease;
+}
+
+.dark-gray {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform: translateX(0) rotateZ(-45deg);
 }
 
 .box {
@@ -74,17 +88,78 @@
 
 .screen input {
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 1.5rem 0.5rem;
   outline: none;
+  border: none;
   font-size: 2rem;
   text-align: right;
+  font-family: Spartan, Arial;
+  border-radius: 0.8rem;
+  background: var(--theme-1-screen);
+  color: var(--white);
 }
 
-/* .keys-wrapper {
-
-} */
+.keys-wrapper {
+  background: var(--theme-1-tgkp);
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
 
 .keys-wrapper .keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.keys-wrapper .keys button {
+  font-size: 2rem;
+  color: var(--theme-1-grayblue);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background: var(--theme-1-kb);
+  box-shadow: 0px 5px 0px var(--theme-1-ks);
+}
+
+#del,
+#reset,
+#equals {
+  color: var(--white);
+}
+
+#del,
+#reset {
+  background: var(--theme-1-keybg);
+  box-shadow: 0px 5px 0px var(--theme-1-keysw);
+}
+
+#reset {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#equals {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background: var(--theme-1-keytg);
+  box-shadow: 0px 5px 0px var(--theme-1-keytgsw);
+}
+
+@media (min-width: 18rem) and (max-width: 34rem) {
+  .content-wrapper {
+    width: 90%;
+  }
+  .keys-wrapper {
+    padding: 1rem;
+  }
+  .keys-wrapper .keys button {
+    padding: 0.4rem;
+  }
+}
+
+@media (min-width: 35rem) and (max-width: 55rem) {
+  .content-wrapper {
+    width: 80%;
+  }
 }
