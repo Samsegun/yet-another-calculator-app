@@ -7,10 +7,21 @@
 .wrapper {
   width: 100vw;
   height: 100vh;
-  background: var(--theme-1-bg);
   font-family: Spartan, Arial;
   position: relative;
   transition: background 300ms ease;
+}
+
+.theme-1-bg {
+  background: var(--theme-1-bg);
+}
+
+.theme-2-bg {
+  background: var(--theme-2-bg);
+}
+
+.theme-3-bg {
+  background: var(--theme-3-bg);
 }
 
 .content-wrapper {
@@ -20,7 +31,18 @@
   text-align: center;
   display: grid;
   gap: 1rem;
+}
+
+.theme-1-color {
   color: var(--white);
+}
+
+.theme-2-color {
+  color: var(--theme-2-grayellow);
+}
+
+.theme-3-color {
+  color: var(--theme-3-lightyellow);
 }
 
 .header-items {
@@ -57,7 +79,19 @@
   border: 1px solid;
   position: relative;
   border-radius: 0.7rem;
+  transition: background 300ms ease;
+}
+
+.theme-1-slide {
   background: var(--theme-1-tgkp);
+}
+
+.theme-2-slide {
+  background: var(--theme-2-tgkp);
+}
+
+.theme-3-slide {
+  background: var(--theme-3-tgkpsbg);
 }
 
 .slider {
@@ -110,14 +144,37 @@
   text-align: right;
   font-family: Spartan, Arial;
   border-radius: 0.8rem;
-  background: var(--theme-1-screen);
   color: inherit;
+  transition: background 300ms ease;
+}
+
+.theme-1-screen {
+  background: var(--theme-1-screen);
+}
+
+.theme-2-screen {
+  background: var(--theme-2-screen);
+}
+
+.theme-3-screen {
+  background: var(--theme-3-tgkpsbg);
 }
 
 .keys-wrapper {
-  background: var(--theme-1-tgkp);
   padding: 2rem;
   border-radius: 0.8rem;
+}
+
+.theme-1-kwrapper {
+  background: var(--theme-1-tgkp);
+}
+
+.theme-2-kwrapper {
+  background: var(--theme-2-tgkp);
+}
+
+.theme-3-kwrapper {
+  background: var(--theme-3-tgkpsbg);
 }
 
 .keys-wrapper .keys {
@@ -128,25 +185,48 @@
 
 .keys-wrapper .keys button {
   font-size: 2rem;
-  color: var(--theme-1-grayblue);
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;
+  transition: background 300ms ease;
+}
+
+.theme-1-button {
+  color: var(--theme-1-grayblue);
   background: var(--theme-1-kb);
   box-shadow: 0px 5px 0px var(--theme-1-ks);
 }
 
-#del,
-#reset,
-#equals {
+.theme-2-button {
+  color: inherit;
+  background: var(--theme-2-kb);
+  box-shadow: 0px 5px 0px var(--theme-2-ks);
+}
+
+.theme-3-button {
+  color: inherit;
+  background: var(--theme-3-kb);
+  box-shadow: 0px 5px 0px var(--theme-3-ks);
+}
+
+.theme-unique {
   color: var(--white);
 }
 
-#del,
-#reset {
+.theme-1-same {
   background: var(--theme-1-keybg);
   box-shadow: 0px 5px 0px var(--theme-1-keysw);
+}
+
+.theme-2-same {
+  background: var(--theme-2-keybg);
+  box-shadow: 0px 5px 0px var(--theme-2-keysw);
+}
+
+.theme-3-same {
+  background: var(--theme-3-keybg);
+  box-shadow: 0px 5px 0px var(--theme-3-keysw);
 }
 
 #reset {
@@ -157,8 +237,21 @@
 #equals {
   grid-column-start: 3;
   grid-column-end: 5;
+}
+
+.theme-1-equals {
   background: var(--theme-1-keytg);
   box-shadow: 0px 5px 0px var(--theme-1-keytgsw);
+}
+
+.theme-2-equals {
+  background: var(--theme-2-keytg);
+  box-shadow: 0px 5px 0px var(--theme-2-keytgsw);
+}
+
+.theme-3-equals {
+  background: var(--theme-3-keytg);
+  box-shadow: 0px 5px 0px var(--theme-3-keytgsw);
 }
 
 @media (min-width: 18rem) and (max-width: 34rem) {

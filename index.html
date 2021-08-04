@@ -10,11 +10,12 @@
   <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
   <script src="js/vendor.js" defer></script>
   <script src="js/toggle.js" defer></script>
+  <script src="js/app.js" defer></script>
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="content-wrapper">
+  <div class="wrapper theme-1-bg">
+    <div class="content-wrapper theme-1-color">
       <!-- heading -->
       <div class="header">
         <div class="header-items">
@@ -28,7 +29,7 @@
                 <span class="switch-num box check-2_box box">2</span>
                 <span class="switch-num box check-3_box box">3</span>
               </div>
-              <div class="slide">
+              <div class="slide theme-1-slide">
                 <span class="slider dark-gray"></span>
 
                 <!-- this boxes represent different color schemes and styles for the page -->
@@ -42,29 +43,29 @@
       </div>
       <!-- input display -->
       <div class="screen">
-        <input type="text">
+        <input type="text" class="theme-1-screen">
       </div>
       <!-- number keys -->
-      <div class="keys-wrapper">
+      <div class="keys-wrapper theme-1-kwrapper">
         <div class="keys">
-          <button type="button" data-num="7">7</button>
-          <button type="button" data-num="8">8</button>
-          <button type="button" data-num="9">9</button>
-          <button type="button" id="del" class="ctrl">DEL</button>
-          <button type="button" data-num="4">4</button>
-          <button type="button" data-num="5">5</button>
-          <button type="button" data-num="6">6</button>
-          <button type="button" data-operator="+">+</button>
-          <button type="button" data-num="1">1</button>
-          <button type="button" data-num="2">2</button>
-          <button type="button" data-num="3">3</button>
-          <button type="button" data-operator="-">-</button>
-          <button type="button" data-num=".">.</button>
-          <button type="button" data-num="0">0</button>
-          <button type="button" data-operator="/">/</button>
-          <button type="button" data-operator="*">x</button>
-          <button type="button" id="reset" class="ctrl">RESET</button>
-          <button type="button" id="equals" class="ctrl">=</button>
+          <button type="button" class="theme-1-button" data-num="7">7</button>
+          <button type="button" class="theme-1-button" data-num="8">8</button>
+          <button type="button" class="theme-1-button" data-num="9">9</button>
+          <button type="button" class="theme-1-button theme-1-same theme-unique" id="del" class="ctrl">DEL</button>
+          <button type="button" class="theme-1-button" data-num="4">4</button>
+          <button type="button" class="theme-1-button" data-num="5">5</button>
+          <button type="button" class="theme-1-button" data-num="6">6</button>
+          <button type="button" class="theme-1-button" data-operator="+">+</button>
+          <button type="button" class="theme-1-button" data-num="1">1</button>
+          <button type="button" class="theme-1-button" data-num="2">2</button>
+          <button type="button" class="theme-1-button" data-num="3">3</button>
+          <button type="button" class="theme-1-button" data-operator="-">-</button>
+          <button type="button" class="theme-1-button" data-num=".">.</button>
+          <button type="button" class="theme-1-button" data-num="0">0</button>
+          <button type="button" class="theme-1-button" data-operator="/">/</button>
+          <button type="button" class="theme-1-button" data-operator="*">x</button>
+          <button type="button" class="theme-1-button theme-1-same theme-unique" id="reset" class="ctrl">RESET</button>
+          <button type="button" class="theme-1-button theme-1-equals theme-unique" id="equals" class="ctrl">=</button>
         </div>
       </div>
     </div>
