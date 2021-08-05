@@ -5,7 +5,7 @@ toggleBox.forEach((box) => {
       addRemove(LIGHT, MAGENTA, DARKGRAY);
       wrapper.classList.remove("theme-2-bg", "theme-3-bg");
       wrapper.classList.add("theme-1-bg");
-      contentWrapper.classList.remove("theme-2-color", "theme-2-color");
+      contentWrapper.classList.remove("theme-2-color", "theme-3-color");
       contentWrapper.classList.add("theme-1-color");
       slide.classList.remove("theme-2-slide", "theme-3-slide");
       slide.classList.add("theme-1-slide");

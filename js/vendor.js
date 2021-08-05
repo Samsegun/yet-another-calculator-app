@@ -13,6 +13,8 @@ const operators = document.querySelectorAll("button[data-operator]");
 const del = document.getElementById("del");
 const reset = document.getElementById("reset");
 const equals = document.getElementById("equals");
+const backDrop = document.querySelector(".backdrop");
+const notification = document.querySelector(".notification");
 
 // global identifiers
 const DARKGRAY = "dark-gray";
