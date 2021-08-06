@@ -93,14 +93,20 @@
 
 .theme-1-slide {
   background: var(--theme-1-tgkp);
+  box-shadow: 5px 5px 5px 0 rgb(0 0 0 / 20%) inset,
+    -3px -3px 5px 0 rgb(255 255 255 / 20%) inset;
 }
 
 .theme-2-slide {
   background: var(--theme-2-tgkp);
+  box-shadow: 5px 5px 5px 0 rgb(0 0 0 / 20%) inset,
+    -3px -3px 5px 0 rgb(255 255 255 / 20%) inset;
 }
 
 .theme-3-slide {
   background: var(--theme-3-tgkpsbg);
+  box-shadow: 5px 5px 5px 0 rgb(0 0 0 / 20%) inset,
+    -3px -3px 5px 0 rgb(255 255 255 / 20%) inset;
 }
 
 .slider {
@@ -160,14 +166,20 @@
 
 .theme-1-screen {
   background: var(--theme-1-screen);
+  box-shadow: -8px -8px 6px 0 rgb(0 0 0 / 20%) inset,
+    4px 4px 6px 0 rgb(255 255 255 / 20%) inset;
 }
 
 .theme-2-screen {
   background: var(--theme-2-screen);
+  box-shadow: -8px -8px 6px 0 rgb(0 0 0 / 20%) inset,
+    10px 10px 6px 0 rgb(255 255 255 / 20%) inset;
 }
 
 .theme-3-screen {
   background: var(--theme-3-tgkpsbg);
+  box-shadow: -8px -8px 6px 0 rgb(0 0 0 / 20%) inset,
+    5px 5px 6px 0 rgb(255 255 255 / 20%) inset;
 }
 
 .keys-wrapper {
@@ -177,14 +189,20 @@
 
 .theme-1-kwrapper {
   background: var(--theme-1-tgkp);
+  box-shadow: -8px -8px 5px 0 rgb(0 0 0 / 20%) inset,
+    8px 8px 5px 0 rgb(255 255 255 / 20%) inset;
 }
 
 .theme-2-kwrapper {
   background: var(--theme-2-tgkp);
+  box-shadow: -10px -10px 5px 0 rgb(0 0 0 / 20%) inset,
+    10px 10px 5px 0 rgb(255 255 255 / 20%) inset;
 }
 
 .theme-3-kwrapper {
   background: var(--theme-3-tgkpsbg);
+  box-shadow: -4px -4px 4px 0 rgba(87, 87, 87, 0.7) inset,
+    4px 4px 5px 0 rgb(255 255 255 / 20%) inset;
 }
 
 .keys-wrapper .keys {

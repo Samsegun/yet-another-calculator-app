@@ -67,8 +67,8 @@ const THEME2EQUALS = "theme-2-equals";
 const THEME3EQUALS = "theme-3-equals";
 
 // functions for toggling classes
-
-// 1st&2nd parameters are classes to be removed
+// 1st parameter is the element itself
+// 2nd&3rd parameters are classes to be removed
 // last parameter is the class to be added
 function addRemoveFromClass(element, class1, class2, class3) {
   element.classList.remove(class1, class2);
