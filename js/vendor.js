@@ -8,6 +8,7 @@ const keysWrapper = document.querySelector(".keys-wrapper");
 const buttons = document.querySelectorAll(
   ".keys-wrapper .keys button:not(.ctrl)",
 );
+const point = document.querySelector(".point");
 const numbers = document.querySelectorAll("button[data-num]");
 const operators = document.querySelectorAll("button[data-operator]");
 const del = document.getElementById("del");

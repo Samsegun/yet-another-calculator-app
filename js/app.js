@@ -8,6 +8,8 @@ function notify() {
   }, 3000);
 }
 
+let dotCount = 0;
+
 // key codes for numbers and operators
 // key code number 13 is for "enter key"
 const numberCodes = [
@@ -21,7 +23,10 @@ input.addEventListener("keypress", (e) => {
   e.stopPropagation();
   e.stopImmediatePropagation();
   e.preventDefault();
-
+  // if (e.keyCode === 46) {
+  //   input.value += e.key;
+  //   point.disabled = true;
+  // }
   if (numberCodes.includes(e.keyCode)) {
     input.value += e.key;
   } else if (e.keyCode === 13) {
@@ -34,11 +39,16 @@ input.addEventListener("keypress", (e) => {
 });
 
 del.addEventListener("click", () => {
-  input.value = input.value.slice(0, input.value.length - 1);
+  let cut = input.value.slice(0, input.value.length - 1);
+  input.value = cut;
+  if (!input.value.includes(".")) {
+    point.disabled = false;
+  }
 });
 
 reset.addEventListener("click", () => {
   input.value = "";
+  point.disabled = false;
 });
 
 equals.addEventListener("click", () => {
@@ -51,10 +61,12 @@ equals.addEventListener("click", () => {
 
 numbers.forEach((number) => {
   number.addEventListener("click", (e) => {
-    if (input.value.length <= 32) {
+    if (e.target.dataset.num === ".") {
       input.value += number.dataset.num;
-    } else {
-      notify();
+      dotCount++;
+      point.disabled = true;
+    } else if (input.value.length <= 32) {
+      input.value += number.dataset.num;
     }
   });
 });
